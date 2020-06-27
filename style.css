@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3, p, button {
+    font-family: 'Lato', sans-serif;
+}
+
+/* NavBar */
+
+#navbarTogglerDemo01 {
+    padding-left: 0.5rem;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* First Section */
+
+#welcomePage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSectionContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSectionContainer>h1, .firstSectionContainer>h3 {
+    text-align: center;
+}
+
+.learn--more__box {
+    background-image: url(images/forest-89179_1280.jpg);
+}
+
+.learn--more__box>button {
+    padding: 1rem;
+}
+
+.learnMore--button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+/* Second Section */
+
+#whoWeAre {
+    width: 100%;
+    height: 80vh;
+}
+
+.secondSection--background {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/adventure-1846482_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoWeAre--smallest__box {
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.whoWeAre--title {
+    font-weight: 700;
+}
+
+/* Third Section */
+
+#placesToVisit {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.placesToVisit--gallery {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery--example {
+    width: 22%;
+    height: 75%;
+    position: relative;
+}
+
+.info--city__box {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    background-color: rgba(14, 13, 13, 0.61);
+    color: #ffffff;
+    padding: 0.6rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.sanfran, .amsterdam, .warsaw {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.empty--divs {
+    display: none;
+}
+/* Fourth Section */
+
+#blogSection {
+    width: 100%;
+    height: 85vh;
+    background-color: rgba(156, 156, 156, 0.801);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.blog--posts__section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blog--post {
+    width: 25%;
+    height: 100%;
+}
+
+.blog--post__images {
+    width: 100%;
+    height: 60%;
+}
+
+.blog--post__images img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog--post__title {
+    font-weight: 700;
+}
+
+.blog--post__author, .blog--post__date {
+    color: rgb(59, 59, 59);
+}
+
+.blog--button {
+    width: 30vw;
+    height: 10vh; 
+    position: absolute;
+    bottom: -35px;
+    z-index: 10;
+}
+
+.blog--post__button {
+    margin: 0 auto;
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;   
+}
+
+.blog--post__button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Fifth Section */
+
+#ContactUs {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.form--container {
+    background-image: url(images/cinque-terre-279013_1280.jpg);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form--contactus {
+    background-color: #ffffff;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input,
+.form textarea{
+    line-height: 2.5rem;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.form--button {
+    height: 4.5rem;
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.aboutus--info {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.aboutus--info__content {
+    text-align: start;
+    padding: 1.5rem;
+    padding-top: 8rem;
+    margin: 1rem;
+}
+
+.aboutus--info__content h1 {
+    font-size: 3rem;
+}
+
+.aboutus--info__content p {
+    font-size: 1.5rem;
+}
+
+.footer {
+    padding-right: 1rem;
+    text-align: end;
+    line-height: 0.3rem;
+    color: rgb(59, 59, 59);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+
+
+/* RWD TABLETS */
+
+@media (max-width: 55rem) {
+
+h1{
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+/* First Section */
+
+#welcomePage {
+    height: 80vh;
+}
+
+/* Second Section */
+
+#whoWeAre {
+    height: 70vh;
+}
+
+.whoWeAre--smallest__box {
+    width: 56%;
+    background-color: #fcf8e8;
+}
+
+/* Third Section */
+
+#placesToVisit {
+    background-color: #fcf8e8;
+}
+
+.placesToVisit--gallery {
+    margin: 0 auto;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.gallery--example__grid1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gallery--example__grid2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.gallery--example__grid3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.gallery--example,
+.empty--divs {
+    width: 100%;
+    height: 100%;
+}
+
+.empty--divs {
+    display: block;
+    background-color: #ecdfc8;
+}
+
+.empty--div1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.empty--div2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.empty--div3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+/* Fourth Section */
+
+#blogSection {
+    height: 110vh;
+}
+
+.blog--posts__section {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.blog--post__grid1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.blog--post__grid2 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.blog--post__grid3 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.blog--post {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.blog--button {
+    width: 60;
+}
+
+.blog--button {
+    width: 60vw;
+    height: 7vh; 
+    bottom: -30px;
+}
+
+.blog--post__button a {
+    font-size: 1.2rem;
+}
+
+/* Fifth Section */
+
+#ContactUs {
+    height: 110%;
+    flex-direction: column;
+}
+
+.form--container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form--contactus {
+    width: 61%;
+    height: 50%;
+}
+
+.form input,
+.form textarea{
+    line-height: 2.5rem;
+    margin: 1rem auto;
+    width: 85%;
+}
+
+.form--button {
+    height: 4.5rem;
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.aboutus--info {
+    width: 100%;
+}
+
+.aboutus--info__content {
+    text-align: start;
+    padding: 1rem;
+    padding-top: 1rem;
+}
+
+.footer {
+    padding-right: 1rem;
+    text-align: end;
+    line-height: 0.3rem;
+    color: rgb(59, 59, 59);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+}
+
+@media (max-width: 41rem) {
+
+h1{
+        font-size: 3rem;
+    }
+    
+h3 {
+        font-size: 2rem;
+    }
+    /* First Section */
+
+#welcomePage {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.firstSectionContainer {
+    width: 100%;
+}
+
+/* Second Section */
+
+.whoWeAre--smallest__box {
+    width: 95%;
+}
+
+/* Third Section */
+
+#placesToVisit {
+    text-align: center;
+    height: 100vh;
+}
+
+.placesToVisit--gallery {
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 5px;
+}
+
+.gallery--example__grid1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gallery--example__grid2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.gallery--example__grid3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.empty--divs {
+    display: none;
+}
+
+/* Fourth Section */
+
+#blogSection {
+    text-align: center;
+    height: auto;
+}
+
+.blog--posts__section {
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    padding-bottom: 1.5rem;
+}
+
+.blog--post__grid1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.blog--post__grid2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.blog--post__grid3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.blog--button {
+    width: 85vw;
+}
+
+/* Fifth Section */
+
+#ContactUs {
+    height: 120%;
+}
+
+.form--contactus {
+    width: 85vw;
+    height: 70%;
+}
+
+.aboutus--info__content {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.email {
+    word-wrap: break-word;
+}
+
+.footer {
+    bottom: -1rem;
+    right: 0rem;
+}
+
+}
